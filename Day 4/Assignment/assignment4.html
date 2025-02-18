@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Boxes</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f2ff;
+            text-align: center;
+        }
+        .header {
+            background-color: #29a3a3;
+            padding: 15px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items:self-start;
+            width: 100%;
+            padding: 15px 50px;
+        }
+        .header h1 {
+            font-size: 24px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            margin: 50px auto;
+        }
+        .container h2 {
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+        .box-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+        }
+        #box1:hover {
+            background: url('https://travel-blog.happyeasygo.com/wp-content/uploads/2020/05/Hampi-Karnataka.jpg') no-repeat center center/cover;
+            transform: scale(1.05);
+        }
+        #box2:hover{
+            background: linear-gradient(45deg, #ff5733, #33ff57); 
+            border-radius: 100%;
+        }
+        .footer {
+            background-color: #29a3a3;
+            color: white;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 320px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Magic Boxes</h1>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Do Magic</h2>
+        <div class="box-container">
+            <div class="box" id="box1">
+                <p><strong>Box 1</strong></p>
+                <p>Hover to reveal magic!</p>
+            </div>
+            <div class="box" id="box2">
+                <p><strong>Box 2</strong></p>
+                <p>Hover to reveal magic!</p>
+            </div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+        &copy; 2025 Magic Boxes. All rights reserved.
+    </footer>
+</body>
+</html>
