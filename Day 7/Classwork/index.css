@@ -1,0 +1,50 @@
+ :root{
+    --primary-color:aqua;
+    --secondary-color:yellow;
+    --last-color:red;
+ }
+#parent{
+    width: 100%;
+    height: 300px;
+    border: 1px solid gray;
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+#child1{
+background-color: var(--primary-color);
+grid-area: 1/1/2/3;
+}
+#child2{
+    background-color:var(--secondary-color);
+    grid-area: 2/1/4/2 ;
+}
+#child3{
+    background-color:var(--secondary-color);
+    grid-area: 2/2/4/4;
+}
+#child4{
+    background: var(--last-color);
+}
+#child5{
+    background-color: var(--last-color);
+}
+#child6{
+    background-color: var(--primary-color);
+}
+#child7{
+    background-color: var(--primary-color);
+}
+div{
+    border: 3px solid white;
+}
+
+@media(max-width:500px){
+    #parent{
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        height: 500px;
+    }
+    
+}
