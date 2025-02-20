@@ -14,12 +14,12 @@ element.style.padding="10px"
 
 document.getElementById("parent").append(element)
 
-// var num=10;//assignment
+var num=10;//assignment
  
-// num=15;//re-assignment
-// console.log(num)
+num=15;//re-assignment
 console.log(num)
-var num=10;
+// console.log(num)
+// var num=10;
 
 function myFunction(){
     
